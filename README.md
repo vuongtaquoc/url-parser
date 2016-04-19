@@ -1,5 +1,9 @@
 # url-parser
 
+======
+[![NPM Version][npm-image]][npm-url]
+[![NPM Downloads][downloads-image]][npm-url]
+
 ## Usage
 ```npm install url-parser```
 
@@ -8,7 +12,7 @@ or
 ```bower install url-parser```
 
 ```javascript
-var urlParser = require('urlParser');
+var urlParser = require('url_parser');
 
 urlParser('http://example.com/terms/:termId/posts/:postId', {
 	termId: 1,
@@ -17,7 +21,7 @@ urlParser('http://example.com/terms/:termId/posts/:postId', {
 ```
 
 ```javascript
-var urlParser = require('urlParser');
+var urlParser = require('url_parser');
 
 urlParser('http://example.com/terms/:termId/posts/:postId', {
 	termId: 1,
@@ -33,3 +37,7 @@ urlParser('http://example.com/terms/:termId/posts/:postId', {
 
 ## License
 [The MIT License](http://opensource.org/licenses/MIT)
+
+[npm-image]: https://img.shields.io/npm/v/url_parser.svg?style=flat
+[npm-url]: https://www.npmjs.org/package/url_parser
+[downloads-image]: https://img.shields.io/npm/dm/url_parser.svg?style=flat

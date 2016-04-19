@@ -1,5 +1,5 @@
 {
-    "name": "url-parser",
+    "name": "url_parser",
     "version": "1.0.0",
     "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
     "main": "./lib/url-parser/index.js",
