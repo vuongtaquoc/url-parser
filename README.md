@@ -3,14 +3,13 @@
 ======
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][npm-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
 
 ## Usage
-```npm install url-parser```
+```npm install url_parser```
 
 or
 
-```bower install url-parser```
+```bower install url_parser```
 
 ```javascript
 var urlParser = require('url_parser');
@@ -42,5 +41,3 @@ urlParser('http://example.com/terms/:termId/posts/:postId', {
 [npm-image]: https://img.shields.io/npm/v/url_parser.svg?style=flat
 [npm-url]: https://www.npmjs.org/package/url_parser
 [downloads-image]: https://img.shields.io/npm/dm/url_parser.svg?style=flat
-[coveralls-image]: https://coveralls.io/repos/vuongtaquoc/url-parser/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/r/vuongtaquoc/url-parser?branch=master
