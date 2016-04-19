@@ -1,6 +1,6 @@
 {
     "name": "url_parser",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
     "main": "./lib/url-parser/index.js",
     "repository": {
