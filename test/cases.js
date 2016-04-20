@@ -56,4 +56,15 @@ describe('url-parser', function() {
 
 		done();
 	});
+
+	it('should add query string with a param is null', function(done) {
+		var url = urlParser('http://example.com/terms', {
+			skip: null,
+			take: 20,
+		});
+
+		should.equal('http://example.com/terms?take=20', url);
+
+		done();
+	});
 });
