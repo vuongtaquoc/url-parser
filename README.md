@@ -48,7 +48,7 @@ In HTML:
 
 In Javascript:
 ```javascript
-var url = __('http://example.com/terms/:termId/posts/:postId', {
+var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
 	termId: 1,
 	postId: 2,
 });
