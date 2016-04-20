@@ -12,7 +12,7 @@
     },
     "homepage": "https://github.com/vuongtaquoc/url-parser",
     "scripts": {
-        "test": "./node_modules/.bin/_mocha ./test/case.js"
+        "test": "./node_modules/.bin/_mocha ./test/cases.js"
     },
     "keywords": [
         "url",
