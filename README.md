@@ -56,7 +56,7 @@ console.log(url); // -> http://example.com/terms/1/posts/2
 ```
 
 ```javascript
-var url = __('http://example.com/terms/:termId/posts/:postId', {
+var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
 	termId: 1,
 	postId: 2,
 	skip: 5,

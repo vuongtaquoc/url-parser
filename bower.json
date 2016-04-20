@@ -1,12 +1,12 @@
 {
   "name": "url_parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/vuongtaquoc/url-parser",
   "authors": [
     "Ta Quoc Vuong <tqv.itvn@gmail.com>"
   ],
   "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
-  "main": "dist/url-parser.standalone.js",
+  "main": "./dist/url-parser.standalone.min.js",
   "moduleType": [
     "node"
   ],
