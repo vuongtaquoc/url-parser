@@ -32,6 +32,7 @@
     ".travis.yml",
     "**/.*",
     "bower_components",
-    "tests"
+    "tests",
+    "rules"
   ]
 }
