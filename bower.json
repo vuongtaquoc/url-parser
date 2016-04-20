@@ -6,7 +6,9 @@
     "Ta Quoc Vuong <tqv.itvn@gmail.com>"
   ],
   "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
-  "main": "./dist/url-parser.standalone.min.js",
+  "main": [
+    "dist/url-parser.standalone.min.js"
+  ],
   "moduleType": [
     "node"
   ],
