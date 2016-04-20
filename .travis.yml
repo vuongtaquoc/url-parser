@@ -7,4 +7,4 @@ node_js:
     - "4.1"
     - "5.0"
 after_success:
-    - ./node_modules/.bin/_mocha ./test/case.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+    - ./node_modules/.bin/_mocha ./test/cases.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
