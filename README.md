@@ -77,7 +77,7 @@ console.log(url); // -> http://example.com/terms/1/posts/2?skip=5&take=10
 [npm-image]: https://img.shields.io/npm/v/url_parser.svg?style=flat
 [npm-url]: https://www.npmjs.org/package/url_parser
 [downloads-image]: https://img.shields.io/npm/dm/url_parser.svg?style=flat
-[coveralls-image]: https://coveralls.io/github/vuongtaquoc/url-parser/badge.svg?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/vuongtaquoc/url-parser/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/vuongtaquoc/url-parser?branch=master
 [travis-image]: https://travis-ci.org/vuongtaquoc/url-parser.svg
 [travis-url]: https://travis-ci.org/vuongtaquoc/url-parser
