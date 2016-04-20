@@ -70,7 +70,7 @@ describe('url-parser', function() {
 	it('should replace source string with params are string', function(done) {
 		var url = urlParser('http://example.com/terms/:termId/posts', 'string');
 
-		should.equal('http://example.com/terms/:termId/posts', url);
+		should.equal(undefined, url);
 
 		done();
 	});
@@ -82,7 +82,35 @@ describe('url-parser', function() {
 			termId: 1,
 		}]);
 
-		should.equal('http://example.com/terms/:termId/posts', url);
+		should.equal(undefined, url);
+
+		done();
+	});
+
+	it('should replace source string with value of param is not string or number', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', {
+			skip: 5,
+			take: 20,
+			termId: {
+				id: 1,
+			},
+		});
+
+		should(undefined, url);
+
+		done();
+	});
+
+	it('should replace source string with value of query string is not string or number', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', {
+			skip: {
+				data: 3
+			},
+			take: 20,
+			termId: 1,
+		});
+
+		should('http://example.com/terms/1/posts?take=20', url);
 
 		done();
 	});
