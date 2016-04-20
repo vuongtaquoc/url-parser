@@ -3,6 +3,7 @@ URL Parser
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][npm-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
+[![Build Status][travis-image]][travis-url]
 
 # Server
 
@@ -78,3 +79,5 @@ console.log(url); // -> http://example.com/terms/1/posts/2?skip=5&take=10
 [downloads-image]: https://img.shields.io/npm/dm/url_parser.svg?style=flat
 [coveralls-image]: https://coveralls.io/github/vuongtaquoc/url-parser/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/vuongtaquoc/url-parser?branch=master
+[travis-image]: https://travis-ci.org/vuongtaquoc/url-parser.svg
+[travis-url]: https://travis-ci.org/vuongtaquoc/url-parser
