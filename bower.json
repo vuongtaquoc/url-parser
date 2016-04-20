@@ -1,31 +1,38 @@
 {
-    "name": "url_parser",
-    "version": "1.0.2",
-    "homepage": "https://github.com/vuongtaquoc/url-parser",
-    "authors": [
-        "Ta Quoc Vuong <tqv.itvn@gmail.com>"
-    ],
-    "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
-    "main": "./dist/url-parser.standalone.min.js",
-    "moduleType": [
-        "globals"
-    ],
-    "keywords": [
-        "url",
-        "url parser",
-        "route",
-        "parse route",
-        "parse url",
-        "route parse"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "lib",
-        "node_modules",
-        "test",
-        "Gruntfile.js",
-        "package.json",
-        "README.md",
-        ".travis.yml"
-    ]
+  "name": "url_parser",
+  "version": "1.0.0",
+  "homepage": "https://github.com/vuongtaquoc/url-parser",
+  "authors": [
+    "Ta Quoc Vuong <tqv.itvn@gmail.com>"
+  ],
+  "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
+  "main": "dist/url-parser.standalone.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "url",
+    "url",
+    "parser",
+    "route",
+    "parse",
+    "route",
+    "parse",
+    "url",
+    "route",
+    "parse"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "lib",
+    "node_modules",
+    "test",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    ".travis.yml",
+    "**/.*",
+    "bower_components",
+    "tests"
+  ]
 }
