@@ -1,45 +1,51 @@
 {
-    "name": "url_parser",
-    "version": "1.0.4",
-    "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
-    "main": "./lib/url-parser/index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/vuongtaquoc/url-parser"
-    },
-    "bugs": {
-        "url": "https://github.com/vuongtaquoc/url-parser/issues"
-    },
-    "homepage": "https://github.com/vuongtaquoc/url-parser",
-    "scripts": {
-        "test": "./node_modules/.bin/_mocha ./test/cases.js"
-    },
-    "keywords": [
-        "url",
-        "url parser",
-        "route",
-        "parse route",
-        "parse url",
-        "route parse"
-    ],
-    "author": {
-        "name": "Ta Quoc Vuong",
-        "email": "tqv.itvn@gmail.com"
-    },
-    "license": "MIT",
-    "devDependencies": {
-        "blanket": "1.1.9",
-        "coveralls": "2.11.6",
-        "grunt": "0.4.5",
-        "grunt-browserify": "4.0.1",
-        "grunt-contrib-clean": "0.7.0",
-        "grunt-contrib-jshint": "0.12.0",
-        "grunt-contrib-uglify": "0.11.0",
-        "grunt-contrib-watch": "0.6.1",
-        "grunt-jscs": "2.6.0",
-        "load-grunt-tasks": "3.4.0",
-        "mocha": "2.3.4",
-        "mocha-lcov-reporter": "1.0.0",
-        "should": "8.1.1"
-    }
+  "name": "url_parser",
+  "version": "1.0.5",
+  "description": "Helper to parse url that works seamlessly across Node.js and browser environments",
+  "main": "./lib/url-parser/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuongtaquoc/url-parser"
+  },
+  "bugs": {
+    "url": "https://github.com/vuongtaquoc/url-parser/issues"
+  },
+  "homepage": "https://github.com/vuongtaquoc/url-parser",
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha ./test/cases.js"
+  },
+  "keywords": [
+    "url",
+    "url parser",
+    "url parse",
+    "route",
+    "parse route",
+    "parse url",
+    "route parse",
+    "route parser",
+    "url_parser"
+  ],
+  "author": {
+    "name": "Ta Quoc Vuong",
+    "email": "tqv.itvn@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "blanket": "1.1.9",
+    "coveralls": "2.11.6",
+    "grunt": "0.4.5",
+    "grunt-browserify": "4.0.1",
+    "grunt-contrib-clean": "0.7.0",
+    "grunt-contrib-jshint": "0.12.0",
+    "grunt-contrib-uglify": "0.11.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-jscs": "2.6.0",
+    "load-grunt-tasks": "3.4.0",
+    "mocha": "2.3.4",
+    "mocha-lcov-reporter": "1.0.0",
+    "should": "8.1.1"
+  },
+  "dependencies": {
+    "lodash": "4.11.1"
+  }
 }

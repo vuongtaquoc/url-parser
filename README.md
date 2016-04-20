@@ -25,12 +25,12 @@ urlParser('http://example.com/terms/:termId/posts/:postId', {
 ```javascript
 var urlParser = require('url_parser');
 
-urlParser('http://example.com/terms/:termId/posts/:postId', {
+urlParser('http://example.com/terms/:termId/posts', {
 	termId: 1,
 	postId: 2,
 	skip: 5,
 	take: 10,
-}); // -> http://example.com/terms/1/posts/2?skip=5&take=10
+}); // -> http://example.com/terms/1/posts?skip=5&take=10
 ```
 
 # Client
@@ -57,14 +57,14 @@ console.log(url); // -> http://example.com/terms/1/posts/2
 ```
 
 ```javascript
-var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
+var url = urlParser('http://example.com/terms/:termId/posts', {
 	termId: 1,
 	postId: 2,
 	skip: 5,
 	take: 10,
 });
 
-console.log(url); // -> http://example.com/terms/1/posts/2?skip=5&take=10
+console.log(url); // -> http://example.com/terms/1/posts?skip=5&take=10
 ```
 
 ## Tests

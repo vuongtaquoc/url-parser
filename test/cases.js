@@ -14,7 +14,7 @@ describe('url-parser', function() {
 		done();
 	});
 
-	it('should replace params with values', function(done) {
+	it('should replace source string with params', function(done) {
 		var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
 			termId: 1,
 			postId: 2,
@@ -25,20 +25,19 @@ describe('url-parser', function() {
 		done();
 	});
 
-	it('should replace params with values and add query string', function(done) {
-		var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
+	it('should replace source string with params and add query string', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', {
 			termId: 1,
-			postId: 2,
 			skip: 5,
 			take: 20,
 		});
 
-		should.equal('http://example.com/terms/1/posts/2?skip=5&take=20', url);
+		should.equal('http://example.com/terms/1/posts?skip=5&take=20', url);
 
 		done();
 	});
 
-	it('should replace params with no value', function(done) {
+	it('should replace source string with no params', function(done) {
 		var url = urlParser('http://example.com/terms/:termId/posts/:postId');
 
 		should.equal('http://example.com/terms/:termId/posts/:postId', url);
@@ -46,13 +45,13 @@ describe('url-parser', function() {
 		done();
 	});
 
-	it('should replace params with no value but the query string is has value', function(done) {
-		var url = urlParser('http://example.com/terms/:termId/posts/:postId', {
+	it('should replace source string with no params but the query string is has value', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', {
 			skip: 5,
 			take: 20,
 		});
 
-		should.equal('http://example.com/terms/:termId/posts/:postId?skip=5&take=20', url);
+		should.equal('http://example.com/terms/:termId/posts?skip=5&take=20', url);
 
 		done();
 	});
@@ -64,6 +63,26 @@ describe('url-parser', function() {
 		});
 
 		should.equal('http://example.com/terms?take=20', url);
+
+		done();
+	});
+
+	it('should replace source string with params are string', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', 'string');
+
+		should.equal('http://example.com/terms/:termId/posts', url);
+
+		done();
+	});
+
+	it('should replace source string with params are array', function(done) {
+		var url = urlParser('http://example.com/terms/:termId/posts', [{
+			skip: 5,
+			take: 20,
+			termId: 1,
+		}]);
+
+		should.equal('http://example.com/terms/:termId/posts', url);
 
 		done();
 	});
