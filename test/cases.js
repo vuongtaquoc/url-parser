@@ -6,7 +6,7 @@ var should = require('should');
 var urlParser = require('../lib/url-parser/index');
 
 describe('url-parser', function() {
-	it('should return source string when no params passed', function(done) {
+	it('should replace source string when no params passed', function(done) {
 		var url = urlParser('http://example.com/one/two');
 
 		should.equal('http://example.com/one/two', url);
@@ -96,7 +96,7 @@ describe('url-parser', function() {
 			},
 		});
 
-		should(undefined, url);
+		should.equal(undefined, url);
 
 		done();
 	});
@@ -110,7 +110,18 @@ describe('url-parser', function() {
 			termId: 1,
 		});
 
-		should('http://example.com/terms/1/posts?take=20', url);
+		should.equal('http://example.com/terms/1/posts?take=20', url);
+
+		done();
+	});
+
+	it('should return source string with path is undefined', function(done) {
+		var url = urlParser(undefined, {
+			skip: 5,
+			take: 20,
+		});
+
+		should.equal(undefined, url);
 
 		done();
 	});
